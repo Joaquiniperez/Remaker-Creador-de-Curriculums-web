@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curriculum Web</title>
+  <link rel="stylesheet" href="./estilos/styles1.css">
+  </head>
+<body>
+  <div class="banner">
+    <div class="navbar">
+      <img src="./images/logo.png" class="logo">
+      <ul>
+        <li><a href="plantilla.html">Inicio</a></li>
+        <li><a href="#">Ejemplo</a></li>
+        <li><a href="#">Más</a></li>
+        <li><a href="#">Comenzar</a></li>
+      </ul>
+    </div>
+    <div class="content">
+         
+        
+   
+    </div>
+    <div class="form1">
+      <h1>Formulario de Ingreso de Datos </h1>
+      <form id="personaForm" action="plantilla.html" method="POST">
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto" accept="image/*"><br>
+        
+      
+        <label for="nombre">Nombre:</label> 
+        <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu/s nombre/s"><br>
+      
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required placeholder="Ingresa tu/s Apellido/s"><br>
+
+        <label for="fechanacimiento">Fecha de nacimiento:</label> 
+        <input type ="date" id="fechaNacimiento" name="fechanacimiento" placeholder="Ingresa tu fecha de nacimiento"><br>
+
+        <label for="especializacion">Especializacion:</label>
+        <input type="text" id="especializacion" name="especializacion" placeholder="Ingresa tu especializacion, en esta sección, puedes resaltar tu experiencia específica en algun campo o tu titulo Universitario. Ejemplo: Abogado"><br>       
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" placeholder=" Da una breve descripcion que hable de vos! Ejemplo: Soy un profesional altamente motivado y dedicado con una amplia experiencia
+la industria imaginaria. Mi carrera se ha centrado en el desarrollo de habilidades técnicas y creativas que me han permitido destacar en diversos roles. Mi pasión por la resolución de problemas y la colaboración me ha llevado a lograr resultados sobresalientes en mis proyectos."></textarea><br>
+      
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" placeholder="Recuerda ingresar tu numero con el prefijo de tu país, ejemplo ARG: +54"><br>
+      
+        <label for="mail">Correo Electrónico:</label>
+        <input type="email" id="mail" name="mail" placeholder="Ingresa tu E-Mail"><br>
+      
+        <label for="link">Enlace de LinkeDin:</label>
+        <input type="url" id="link" name="link" placeholder="Ingresa tu Link de Linkedin, si no tienes uno, te recomendamos que crees uno 
+antes de continuar"><br>
+      
+        <label for="educacion">Educación:</label>
+        <textarea id="educacion" name="educacion" placeholder="
+        Nombre de la Universidad o Institución, Ciudad, Estado
+        Nombre del Título o Grado, Fecha de Graduación
+        
+        Descripción relevante, logros académicos o proyectos destacados si los hubiera.
+        Por ejemplo:
+        
+        Educación
+        
+        Universidad Imaginaria, Ciudad Imaginaria, Estado Imaginario
+        Licenciatura en Ciencias de la Computación, Junio de 2020"></textarea><br>
+      
+        <label for="experiencia" >Experiencia Laboral:</label>
+        <textarea id="experiencia" name="experiencia" placeholder="Experiencia Laboral
+
+        Nombre de la Empresa, Ciudad, Estado
+        Puesto, Fecha de Inicio - Fecha de Término (si es relevante)
+        
+        Descripción de las responsabilidades y logros clave en el puesto.
+        Enumera las tareas y proyectos específicos en los que trabajaste y cualquier resultado medible si es posible.
+        Por ejemplo:
+        
+        Experiencia Laboral
+        
+        ABC Solutions, Inc., Ciudad Imaginaria, Estado Imaginario
+        Desarrollador de Software, Julio de 2019 - Presente"></textarea><br>
+      
+        <label for="habilidades">Habilidades:</label>
+        <textarea id="habilidades" name="habilidades" placeholder="Listá tus las habilidades clave: Identifica las habilidades más relevantes para el trabajo al que estás aplicando y enuméralas en orden de importancia. Esto asegura que las habilidades más importantes estén en la parte superior de la lista."></textarea><br>
+      
+        <input type="submit" value="Siguiente">
+      
+      </form>
+      </div>
+      <button id="infoButton" class="info-button">Instrucciones</button>
+
+<div id="instructionsDisplay" class="instructions-display">
+  <div class="instructions-content">
+    <h2>Instrucciones:</h2>
+    <p>1. Completa los campos con tu información.</p>
+    <p>2. Asegúrate de llenar los campos requeridos.</p>
+    <p>3. Verifica que la informacion proporcionada es correcta.</p>
+    <p>4. Dentro de las entradas tienes un pequeña descripcion de como ingresar los datos.</p>
+    <p>5. Haz clic en 'Siguiente' para continuar.</p>
+  </div>
+  </div>
+</body>
+</html>
+<script src="./scripts/persona.js"></script>
+<script>const infoButton = document.getElementById("infoButton");
+  const instructionsDisplay = document.getElementById("instructionsDisplay");
+  
+  infoButton.addEventListener("click", function () {
+    if (instructionsDisplay.style.display === "block" || instructionsDisplay.style.display === "") {
+      instructionsDisplay.style.display = "none";
+    } else {
+      instructionsDisplay.style.display = "block";
+    }
+  });</script>

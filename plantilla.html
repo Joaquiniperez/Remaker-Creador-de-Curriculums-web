@@ -1,0 +1,67 @@
+   <!DOCTYPE html>
+   <html lang="es">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Plantilla de Persona</title>
+     <link rel="stylesheet" href="estilos/styles2.css">
+   </head>
+   <body>
+    <div class="block"></div>
+    <div id="content" class="container">
+      <div class="avatar">
+       <img id="foto" src="">
+    
+      </div>
+    
+      <div class="name">
+           <h1 id="nombreApellido"></h1>
+           <div class="specialize">
+             <p id="especializacion"></p>
+           </div>
+           <ul class="contact">
+             <li>
+               <span>T</span><p1 id="telefono"></p1>
+             </li>
+               <li>
+                 <span>M</span><p1 id="mail"></p1>
+               </li>
+               <li>
+               <span>L</span><a id="link" href="#" target="_blank">Linkedin</a>
+                </li>
+    
+           </ul>
+      </div>
+      <div class="info">
+       <ul>
+         <li>
+           <p1 id="fechaNacimiento"></p1>
+         </li>
+       </ul>
+      </div>
+      <div class="intro">
+       <h2> ACERCA DE MI</h2>
+       <p id="descripcion"></p>
+      </div>
+      <div class="exp">
+       <h2> EDUCACION</h2>
+       <div class="item">
+         <ul id="educacionList"></ul>
+       </div>
+       <h2 class="skills"> HABILIDADES</h2>
+       <ul id="habilidadesList"></ul>
+    
+      </div>
+      <div class="project">
+           <h2> EXPERIENCIA</h2>
+           <div id="experienciaContainer"></div>
+      </div>
+       </div>
+   
+   <button id="btnPrint">Imprimir PDF</button>
+   
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+   <script src="/scripts/printThis.js"></script>
+   <script src="/scripts/plantillaFiller.js"></script> 
+   
+   </html>
